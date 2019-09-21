@@ -1,4 +1,4 @@
-//Copyright 2019 Samuel Alonso, All Rights Reserved
+//Copyright 2019 Iris Technologies, All Rights Reserved
 #pragma once
 
 #if defined(_WIN32)
