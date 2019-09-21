@@ -4,7 +4,7 @@
 #if defined(EdeaWindows)
 int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)
 {
-    //FreeConsole();
+    FreeConsole();
     AppInstance = hInstance;
     Edea::MainWindow::Draw();
     Edea::MainWindow::Close();
