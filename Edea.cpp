@@ -1,4 +1,4 @@
-//Copyright 2019 Samuel Alonso, All Rights Reserved
+//Copyright 2019 Iris Technologies, All Rights Reserved
 #include <Core/MainWindow.hpp>
 
 #if defined(EdeaWindows)
