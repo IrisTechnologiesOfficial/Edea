@@ -1,3 +1,3 @@
 # Edea {#mainpage}
 
-C++ 20 Framework(Clang, GCC, MSVC &amp; ICC)
+C++ Modern Framework(Clang, GCC, MSVC &amp; ICC)
