@@ -9,7 +9,7 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
     Edea::MainWindow::Draw();
     Edea::MainWindow::Close();
 }
-#elif defined(__linux__)
+#elif defined(EdeaLinux)
 int main()
 {
     return 0;
