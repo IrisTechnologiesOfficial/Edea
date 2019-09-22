@@ -11,3 +11,9 @@ void Foo()
     //Linux-only specific function
 }
 #endif
+
+int main(const int argc, const char ** argv)
+{
+    Foo();
+    return 0;
+}

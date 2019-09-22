@@ -4,8 +4,8 @@ set(DOXYGEN_BUILTIN_STL_SUPPORT YES)
 
 doxygen_add_docs(
     docs
-    ${CMAKE_CURRENT_SOURCE_DIR}/README.md
-    ${PROJECT_SOURCE_DIR}/include/Basic/
+    ${PROJECT_SOURCE_DIR}/README.md
+    ${PROJECT_SOURCE_DIR}/include/Basic
     WORKING_DIRECTORY
     ${PROJECT_SOURCE_DIR}
 )

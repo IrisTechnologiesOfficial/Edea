@@ -2,23 +2,23 @@
 #pragma once
 
 #if defined(_WIN32)
-/** Windows */
+/*! Windows */
 #define EdeaWindows
 #elif defined(__ANDROID__)
-/** Android */
+/*! Android */
 #define EdeaAndroid
 #elif defined(__linux__)
-/** Linux */
+/*! Linux */
 #define EdeaLinux
 #elif defined(__APPLE__)
 #if defined(TARGET_OS_IPHONE)
-/** iOS */
+/*! iOS */
 #define EdeaIos
 #elif defined(TARGET_OS_MAC)
-/** Mac OS X */
+/*! Mac OS X */
 #define EdeaMac
 #endif
 #else
-/** Undefined */
+/*! Undefined */
 #error "This Operating System is not supported by Edea"
 #endif
