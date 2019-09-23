@@ -1,24 +1,32 @@
 //Copyright 2019 Iris Technologies, All Rights Reserved
 #pragma once
+/**
+ * @file Configuration.hpp
+ * @brief Contains OS specific configurations
+ */
 
-#if defined(_WIN32)
-/*! Windows */
-#define EdeaWindows
-#elif defined(__ANDROID__)
-/*! Android */
-#define EdeaAndroid
-#elif defined(__linux__)
-/*! Linux */
-#define EdeaLinux
-#elif defined(__APPLE__)
-#if defined(TARGET_OS_IPHONE)
-/*! iOS */
-#define EdeaIos
-#elif defined(TARGET_OS_MAC)
-/*! Mac OS X */
-#define EdeaMac
-#endif
+
+/** @def Windows */
+#define EdeaWindows defined(_WIN32)
+/** @def Linux */
+#define EdeaLinux defined(__linux__)
+/** @def Android */
+#define EdeaAndroid defined(__ANDROID__)
+/** @def Mac OS X */
+#define EdeaMac defined(__APPLE__) && defined(TARGET_OS_MAC)
+/** @def Mac iOS */
+#define EdeaIos defined(__APPLE__) && defined(TARGET_OS_IPHONE)
+
+#if EdeaWindows
+//Windows specific configuration
+#elif EdeaLinux
+//Linux specific configuration
+#elif EdeaMac
+//Mac specific configuration
+#elif EdeaIos
+//iOS specific configuration
+#elif EdeaAndroid
+//Android specific configuration
 #else
-/*! Undefined */
-#error "This Operating System is not supported by Edea"
+#error "No compatible OS detected"
 #endif

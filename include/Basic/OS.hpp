@@ -2,7 +2,6 @@
 #pragma once
 #include <Basic/Configuration.hpp>
 
-#if defined(EdeaWindows)
+#if(EdeaWindows)
 #include <Windows.h>
-
 #endif

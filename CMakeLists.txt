@@ -15,7 +15,7 @@ if(POLICY CMP0054)
 endif()
 
 option(DOCS "Generate documentation" OFF)
-option(EXAMPLES "Install code examples" ON)
+option(EXAMPLES "Install code examples" OFF)
 option(TESTS "Install unit tests" OFF)
 option(PACK "Build installer packages with CPack" OFF)
 
@@ -25,7 +25,8 @@ if(DOCS)
 endif()
 
 if(EXAMPLES)
+    set(EXAMPLE_INSTALL_DIR /usr/share/doc/Edea)
     install(DIRECTORY
             examples
-            DESTINATION ${CMAKE_INSTALL_SHARE})
+            DESTINATION ${EXAMPLE_INSTALL_DIR})
 endif()
