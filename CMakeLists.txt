@@ -23,3 +23,9 @@ if(DOCS)
     find_package(Doxygen)
     add_subdirectory(docs)
 endif()
+
+if(EXAMPLES)
+    install(DIRECTORY
+            examples
+            DESTINATION ${CMAKE_INSTALL_SHARE})
+endif()

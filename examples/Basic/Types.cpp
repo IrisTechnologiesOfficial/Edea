@@ -13,3 +13,8 @@ void EdeaTypes()
     u64 unsigned64bits = 0;
     f64 float64bits = 0.0;
 }
+
+int main(const int argc,const char** argv)
+{
+    return 0;
+}
